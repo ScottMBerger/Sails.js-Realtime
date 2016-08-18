@@ -1,0 +1,27 @@
+<style type="text/css">
+    #container { display:block; }
+@media only screen and (orientation:portrait){
+  #container {  
+    height: 100vw;
+    -webkit-transform: rotate(270deg);
+    -moz-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+  }
+}
+@media only screen and (orientation:landscape){
+  #container {  
+     -webkit-transform: rotate(0deg);
+     -moz-transform: rotate(0deg);
+     -o-transform: rotate(0deg);
+     -ms-transform: rotate(0deg);
+     transform: rotate(0deg);
+  }
+}
+</style>
+
+<div id="container">
+    <!-- your html for your website -->
+    <H1>This text is always in Landscape Mode</H1>
+</div>
