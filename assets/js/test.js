@@ -1,3 +1,5 @@
+var app = angular.module('App', ['ngMaterial']);
+
 window.onload = function() {
   io.socket.post(window.location.pathname, { name: 'js' }, function (resData, jwres) {
 		console.log(resData)
